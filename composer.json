@@ -1,0 +1,16 @@
+{
+    "name": "balaz/micro-mvc",
+    "description": "Tiny php MVC framework",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "bavecs",
+            "email": "balazsvecsei9@gmail.com"
+        }
+    ],
+    "require": {}
+}
