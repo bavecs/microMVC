@@ -11,7 +11,10 @@ $app->router->get('/', function() {
     Render::view("home");
 });
 
-$app->router->get("/contact", "contact@admin");
+$app->router->get("/contact", "contact");
+$app->router->post("/contact", function() {
+    echo "handling submited data";
+});
 
 
 $app->run();
