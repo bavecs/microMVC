@@ -3,16 +3,15 @@
 require_once __DIR__."/vendor/autoload.php";
 
 use app\core\Application;
+use app\core\Render;
 
 $app = new Application();
 
 $app->router->get('/', function() {
-    echo 'hello word from home ';
+    Render::view("home");
 });
 
-$app->router->get("/contact", function() {
-     echo "Hello from contact ";
-});
+$app->router->get("/contact", "contact@admin");
 
 
 $app->run();

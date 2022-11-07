@@ -14,6 +14,11 @@ class Router
         $this->routes["GET"][$path] = $callback;
     }
 
+    public function post(string $path, $callback)
+    {
+        $this->routes["POST"][$path] = $callback;
+    }
+
 
     public function resolve(Request $request)
     {
@@ -28,7 +33,13 @@ class Router
 
         }
 
-        $callback();
+        if (is_string($callback)) {
+            Render::view($callback);
+        } else {
+            $callback();
+
+        }
+
         
     }
 }
