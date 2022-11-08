@@ -1,11 +1,15 @@
+<h1>
+    <?=$title ?>
+</h1>
 <h2>
     Contact page
 </h2>
 <form method="post" action="contact">
+
     <div class="field">
         <label class="label">Name</label>
         <div class="control">
-            <input class="input" type="text" placeholder="Text input">
+            <input class="input" type="text" name="name" placeholder="Text input">
         </div>
     </div>
 
@@ -13,7 +17,7 @@
     <div class="field">
         <label class="label">Message</label>
         <div class="control">
-            <textarea class="textarea" placeholder="Textarea"></textarea>
+            <textarea class="textarea" name="message" placeholder="Textarea"></textarea>
         </div>
     </div>
 
