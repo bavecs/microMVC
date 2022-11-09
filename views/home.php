@@ -1,2 +1,2 @@
 
-<h2>Home page</h2>
+<p class="title is-2"><?=$title?></p>

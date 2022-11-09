@@ -1,9 +1,6 @@
-<h1>
-    <?=$title ?>
-</h1>
-<h2>
-    Contact page
-</h2>
+<p class="title is-2"><?=$title?></p>
+
+
 <form method="post" action="contact">
 
     <div class="field">

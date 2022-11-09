@@ -12,8 +12,11 @@ $app = new Application(dirname(__DIR__));
 
 $app->router->get('/', [SiteController::class, "index"]);
 
-$app->router->get("/loging", [AuthController::class, "login"]);
+$app->router->get("/login", [AuthController::class, "login"]);
+$app->router->post("/login", [AuthController::class, "login"]);
 $app->router->get("/signup", [AuthController::class, "register"]);
+$app->router->post("/signup", [AuthController::class, "handleRegister"]);
+
 
 $app->router->get("/contact", [ContactController::class, "index"]);
 $app->router->post("/contact", [ContactController::class, "handle"]);

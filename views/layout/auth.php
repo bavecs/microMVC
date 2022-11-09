@@ -16,7 +16,7 @@
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
                 <a class="navbar-item" href="/">
-                    Főoldal
+                    Home
                 </a>
 
                 <a class="navbar-item" href="/contact">
@@ -39,8 +39,11 @@
             </div>
         </div>
     </nav>
-    <div class="container is-max-desktop">
-        {{content}}
+    <div class="container is-max-desktop" style="max-width: 25rem">
+        <div class="box">
+            {{content}}
+
+        </div>
     </div>
 
 </body>
